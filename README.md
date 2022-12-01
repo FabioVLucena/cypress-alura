@@ -27,6 +27,8 @@ npm i -D mochawesome
 
 npx cypress run --reporter mochawesome
 
+cypress.env.json
+
 Cypress.Commands.add('login', (nome, senha) => {
     cy.get('input[formcontrolname="userName"]').type(nome);
     cy.get('input[formcontrolname="password"]').type(senha, {log: false});
